@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef Khaya</title>
+  <style>
+    :root {
+      --navy: #0a1f33;
+      --beige: #fdf6e3;
+      --accent: #d4a373;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--beige);
+      color: var(--navy);
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--navy);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: var(--white);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 90vh;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-content {
+      background: linear-gradient(to right, var(--navy), #123);
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      max-width: 500px;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--navy);
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+
+    .dishes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .dish {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .dish:hover {
+      transform: translateY(-5px);
+    }
+
+    .dish img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .contact-details {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .contact-details h3 {
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .contact-details p {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+      margin-top: 1.5rem;
+    }
+
+    .btn:hover {
+      background: #b88555;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .about {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Chef Khaya</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#dishes">Dishes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://uploads.onecompiler.io/43v9q6euh/43v9q5qju/WhatsApp%20Image%202025-08-30%20at%2022.55.33.jpeg" alt="Chef Khaya">
+    <div class="hero-content">
+      <h2>Chef Khaya</h2>
+      <p>Culinary Artistry Meets Modern Innovation</p>
+      <p>Experience refined French cuisine reimagined for the modern palate. Every dish tells a story of tradition, creativity, and passion.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Chef Khaya</h2>
+    <div class="about">
+      <img src="https://uploads.onecompiler.io/43v9q6euh/43v9q5qju/WhatsApp%20Image%202025-08-30%20at%2022.53.21.jpeg" alt="About Chef Khaya">
+      <p>
+        Chef Khaya brings passion and creativity to every dish. With years of experience in blending 
+        traditional African flavors with international techniques, every plate tells a story. 
+        His mission is to serve food that warms the heart and delights the senses.
+      </p>
+    </div>
+  </section>
+
+  <section id="dishes">
+    <h2>Featured Dishes</h2>
+    <div class="dishes">
+      <div class="dish">
+        <img src="https://uploads.onecompiler.io/43v9q6euh/43v9q5qju/WhatsApp%20Image%202025-08-30%20at%2022.47.36.jpeg" alt="Dish 1">
+        <h3>Heritage Platter</h3>
+        <p>Roasted Butternut Soup - Silky roasted butternut, finished with crème fraîche and toasted pumpkin seeds.</p>
+      </div>
+      <div class="dish">
+        <img src="https://uploads.onecompiler.io/43v9q6euh/43v9q5qju/WhatsApp%20Image%202025-08-30%20at%2022.47.37%20(1).jpeg" alt="Dish 2">
+        <h3>Signature Special</h3>
+        <p>A fresh, crispy fried chicken salad featuring julienned cucumbers, shredded carrots, and sliced tomatoes or bell peppers, served with dipping sauce.</p>
+      </div>
+      <div class="dish">
+        <img src="https://uploads.onecompiler.io/43v9q6euh/43v9q5qju/WhatsApp%20Image%202025-08-30%20at%2022.47.37.jpeg" alt="Dish 3">
+        <h3>Sweet Finale</h3>
+        <p>Chocolate Lava Cake - Molten chocolate center, paired with vanilla bean ice cream.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Details</h2>
+    <div class="contact-details">
+      <h3>Get in Touch</h3>
+      <p><strong>Email:</strong> metsondlovini@gmail.com</p>
+      <p><strong>Phone:</strong> +27 67 796 8081</p>
+      <p><strong>Location:</strong> Joburg, South Africa</p>
+      <a href="mailto:metsondlovini@gmail.com?subject=Reservation%20Request" class="btn">Make a Reservation</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chef Khaya. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
